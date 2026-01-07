@@ -1,0 +1,136 @@
+{
+  "name": "aims-toolkit",
+  "displayName": "AIMS Toolkit",
+  "description": "AIMS 팀을 위한 Claude Code MCP 도구 모음 - Sequential Thinking, Context7, Serena, Playwright 포함",
+  "version": "1.0.0",
+  "author": {
+    "name": "AIMS Team"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aimskr/aims-toolkit"
+  },
+  "keywords": [
+    "mcp",
+    "claude-code",
+    "sequential-thinking",
+    "context7",
+    "serena",
+    "playwright",
+    "code-analysis",
+    "development-tools"
+  ],
+  "categories": [
+    "Development Tools",
+    "Code Analysis",
+    "Testing"
+  ],
+  "license": "MIT",
+  "requirements": {
+    "node": ">=18.0.0",
+    "python": ">=3.10",
+    "uv": true
+  },
+  "environmentVariables": [
+    {
+      "name": "CONTEXT7_API_KEY",
+      "description": "Context7 서비스 API 키",
+      "required": true
+    }
+  ],
+  "mcpServers": {
+    "sequential-thinking": {
+      "displayName": "Sequential Thinking",
+      "description": "복잡한 문제를 단계별로 사고하는 도구"
+    },
+    "context7": {
+      "displayName": "Context7",
+      "description": "컨텍스트 기반 코드 이해 도구"
+    },
+    "serena": {
+      "displayName": "Serena",
+      "description": "코드 탐색 및 분석 도구"
+    },
+    "playwright": {
+      "displayName": "Playwright",
+      "description": "브라우저 자동화 및 테스트 도구"
+    }
+  },
+  "skills": [
+    {
+      "name": "serena-exploration",
+      "displayName": "Serena Exploration",
+      "description": "Serena MCP를 활용한 코드 탐색"
+    },
+    {
+      "name": "sequential-thinking",
+      "displayName": "Sequential Thinking",
+      "description": "Sequential Thinking MCP를 활용한 체계적 사고"
+    },
+    {
+      "name": "brainstorming",
+      "displayName": "Brainstorming",
+      "description": "아이디어 브레인스토밍"
+    },
+    {
+      "name": "writing-plans",
+      "displayName": "Writing Plans",
+      "description": "구현 계획 작성"
+    },
+    {
+      "name": "prd-strategist",
+      "displayName": "PRD Strategist",
+      "description": "PRD 및 제품 전략 수립"
+    },
+    {
+      "name": "debug-specialist",
+      "displayName": "Debug Specialist",
+      "description": "디버깅 전문가"
+    },
+    {
+      "name": "code-reviewer",
+      "displayName": "Code Reviewer",
+      "description": "코드 리뷰"
+    },
+    {
+      "name": "ui-ux-design",
+      "displayName": "UI/UX Design",
+      "description": "UI/UX 디자인"
+    },
+    {
+      "name": "architect",
+      "displayName": "Architect",
+      "description": "아키텍처 설계"
+    },
+    {
+      "name": "code-conventions",
+      "displayName": "Code Conventions",
+      "description": "코드 컨벤션 가이드"
+    },
+    {
+      "name": "developer",
+      "displayName": "Developer",
+      "description": "개발 가이드"
+    },
+    {
+      "name": "doc-coauthoring",
+      "displayName": "Doc Co-authoring",
+      "description": "문서 공동 작성"
+    },
+    {
+      "name": "testing-strategy",
+      "displayName": "Testing Strategy",
+      "description": "테스트 전략"
+    },
+    {
+      "name": "security-review",
+      "displayName": "Security Review",
+      "description": "보안 리뷰"
+    },
+    {
+      "name": "frontend-design",
+      "displayName": "Frontend Design",
+      "description": "프론트엔드 디자인"
+    }
+  ]
+}
