@@ -1,0 +1,20 @@
+{
+  "name": "aims-toolkit",
+  "owner": {
+    "name": "AIMS Team",
+    "email": "aims@aimskr.com"
+  },
+  "metadata": {
+    "description": "AIMS 팀을 위한 Claude Code MCP 도구 모음 - Sequential Thinking, Context7, Serena, Playwright 포함",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "aims-toolkit",
+      "source": "./",
+      "description": "AIMS 팀을 위한 Claude Code MCP 도구 모음 - Sequential Thinking, Context7, Serena, Playwright와 15개의 개발 Skills 포함",
+      "category": "development",
+      "tags": ["mcp", "sequential-thinking", "context7", "serena", "playwright", "skills", "development"]
+    }
+  ]
+}

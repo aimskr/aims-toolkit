@@ -3,6 +3,11 @@
   "description": "AIMS 팀을 위한 Claude Code MCP 도구 모음 - Sequential Thinking, Context7, Serena, Playwright 포함",
   "version": "1.0.0",
   "author": {
-    "name": "AIMS Team"
-  }
+    "name": "AIMS Team",
+    "url": "https://github.com/aimskr"
+  },
+  "homepage": "https://github.com/aimskr/aims-toolkit",
+  "repository": "https://github.com/aimskr/aims-toolkit",
+  "license": "MIT",
+  "keywords": ["mcp", "sequential-thinking", "context7", "serena", "playwright", "skills", "development", "claude-code"]
 }
