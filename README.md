@@ -37,14 +37,22 @@ export CONTEXT7_API_KEY="your-api-key"
 
 ## 설치 방법
 
+### 1단계: 마켓플레이스 등록
+
 ```bash
-claude plugin install aims-toolkit@github.com:aimskr/aims-toolkit.git
+claude plugin marketplace add aimskr/aims-toolkit
 ```
 
-또는 프로젝트 범위로 설치 (팀원 자동 공유):
+### 2단계: 플러그인 설치
 
 ```bash
-claude plugin install aims-toolkit@github:your-org/aims-toolkit --scope project
+claude plugin install aims-toolkit
+```
+
+프로젝트 범위로 설치하려면:
+
+```bash
+claude plugin install aims-toolkit --scope project
 ```
 
 ## 포함된 Skills
