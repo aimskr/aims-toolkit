@@ -1,0 +1,8 @@
+{
+  "name": "aims-toolkit",
+  "description": "AIMS 팀을 위한 Claude Code MCP 도구 모음 - Sequential Thinking, Context7, Serena, Playwright 포함",
+  "version": "1.0.0",
+  "author": {
+    "name": "AIMS Team"
+  }
+}
