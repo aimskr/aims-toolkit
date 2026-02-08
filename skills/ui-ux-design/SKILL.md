@@ -1,46 +1,50 @@
 ---
 name: ui-ux-design
-description: "UI, UX, 디자인, UI 디자인, UX 디자인, 사용자 경험 - Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications."
-allowed-tools: Read, Write, Edit, Grep, Glob
-license: Complete terms in LICENSE.txt
+description: "UI, UX, Design, Implementation, Interaction, Live Review - Create and review high-end frontend interfaces with live browser testing. Focus on distinctive aesthetics and production-grade code while avoiding generic 'AI slop'."
+allowed-tools: Read, Write, Edit, Grep, Glob, playwright:browser_snapshot, playwright:browser_take_screenshot, playwright:browser_navigate, playwright:browser_click, playwright:browser_type, playwright:browser_hover, playwright:browser_evaluate
 ---
 
-This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices.
+# UI/UX Design System Skill
 
-The user provides frontend requirements: a component, page, application, or interface to build. They may include context about the purpose, audience, or technical constraints.
+This skill guides the creation of distinctive, production-grade frontend interfaces that strictly avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to mathematical precision, material depth, and creative intentionality.
 
 ## Design Thinking
 
-Before coding, understand the context and commit to a BOLD aesthetic direction:
-
-- **Purpose**: What problem does this interface solve? Who uses it?
-- **Tone**: Pick an extreme: brutally minimal, maximalist chaos, retro-futuristic, organic/natural, luxury/refined, playful/toy-like, editorial/magazine, brutalist/raw, art deco/geometric, soft/pastel, industrial/utilitarian, etc. There are so many flavors to choose from. Use these for inspiration but design one that is true to the aesthetic direction.
-- **Constraints**: Technical requirements (framework, performance, accessibility).
-- **Differentiation**: What makes this UNFORGETTABLE? What's the one thing someone will remember?
-
-**CRITICAL**: Choose a clear conceptual direction and execute it with precision. Bold maximalism and refined minimalism both work - the key is intentionality, not intensity.
-
-Then implement working code (HTML/CSS/JS, React, Vue, etc.) that is:
-
-- Production-grade and functional
-- Visually striking and memorable
-- Cohesive with a clear aesthetic point-of-view
-- Meticulously refined in every detail
+Before coding, commit to a **BOLD** aesthetic direction:
+- **Purpose**: What problem does this solve?
+- **Tone**: Pick an extreme: Brutalist, Minimalist, Maximalist, Retro-futuristic, Luxury/Refined, Editorial/Magazine, Industrial, etc.
+- **Differentiation**: Identify the one "unforgettable" element that defines the design.
 
 ## Frontend Aesthetics Guidelines
 
-Focus on:
+### 1. Strict Color Economy (Max 6 Colors)
+- **Constraint**: Use **no more than 6 distinct colors** (including background, text, and accents).
+- **Strategy**: Establish a clear hierarchy: Dominant, Sub, and Accent. Use CSS variables to maintain this palette.
+- **Impact**: Achieve extreme visual cohesion through restraint rather than abundance.
 
-- **Typography**: Choose fonts that are beautiful, unique, and interesting. Avoid generic fonts like Arial and Inter; opt instead for distinctive choices that elevate the frontend's aesthetics; unexpected, characterful font choices. Pair a distinctive display font with a refined body font.
-- **Color & Theme**: Commit to a cohesive aesthetic. Use CSS variables for consistency. Dominant colors with sharp accents outperform timid, evenly-distributed palettes.
-- **Motion**: Use animations for effects and micro-interactions. Prioritize CSS-only solutions for HTML. Use Motion library for React when available. Focus on high-impact moments: one well-orchestrated page load with staggered reveals (animation-delay) creates more delight than scattered micro-interactions. Use scroll-triggering and hover states that surprise.
-- **Spatial Composition**: Unexpected layouts. Asymmetry. Overlap. Diagonal flow. Grid-breaking elements. Generous negative space OR controlled density.
-- **Backgrounds & Visual Details**: Create atmosphere and depth rather than defaulting to solid colors. Add contextual effects and textures that match the overall aesthetic. Apply creative forms like gradient meshes, noise textures, geometric patterns, layered transparencies, dramatic shadows, decorative borders, custom cursors, and grain overlays.
+### 2. Typography & Mathematical Order
+- **Font Selection**: Avoid "safe" system fonts (Inter, Roboto, Arial). Pair a characterful display font with a refined body font.
+- **Rhythm**: Apply a strict **8pt Grid System** or **Golden Ratio** scales for spacing and sizing.
+- **Micro-Typography**: Refine kerning, line-height, and letter-spacing to create a professional, "designed" feel.
 
-NEVER use generic AI-generated aesthetics like overused font families (Inter, Roboto, Arial, system fonts), cliched color schemes (particularly purple gradients on white backgrounds), predictable layouts and component patterns, and cookie-cutter design that lacks context-specific character.
+### 3. Materiality & Tactility
+- **Physicality**: Move beyond "flat" design. Simulate textures such as glassmorphism, brushed metal, or grain overlays.
+- **Lighting**: Define a consistent light source. Use multi-layered shadows and subtle highlights to create volume and depth that feels tangible.
 
-Interpret creatively and make unexpected choices that feel genuinely designed for the context. No design should be the same. Vary between light and dark themes, different fonts, different aesthetics. NEVER converge on common choices (Space Grotesk, for example) across generations.
+### 4. Motion Physics & Narrative
+- **Spring Physics**: Use natural easing (e.g., spring-based animations) rather than linear transitions.
+- **Staggered Reveals**: Use `animation-delay` to orchestrate a sequenced entry of elements, creating a narrative flow for the user's eye.
 
-**IMPORTANT**: Match implementation complexity to the aesthetic vision. Maximalist designs need elaborate code with extensive animations and effects. Minimalist or refined designs need restraint, precision, and careful attention to spacing, typography, and subtle details. Elegance comes from executing the vision well.
+### 5. Anti-AI Slop Checklist
+- **Reject the Default**: Avoid purple-on-white gradients, generic rounded cards, and predictable layouts.
+- **Intentional Friction**: Introduce "grid-breaking" elements or asymmetrical compositions that signal human-centric design.
 
-Remember: Claude is capable of extraordinary creative work. Don't hold back, show what can truly be created when thinking outside the box and committing fully to a distinctive vision.
+## Live Review Workflow
+
+When reviewing implemented interfaces:
+1. **Audit Color**: Does the UI stay within the 6-color limit?
+2. **Audit Typography**: Is the scale mathematically consistent and the font choice distinctive?
+3. **Audit Material**: Does the interface have depth, or does it feel "flat and generic"?
+4. **Interaction Check**: Do hover states and transitions feel responsive and weighted (not floaty)?
+
+**IMPORTANT**: Elegance comes from executing a vision with precision. Match implementation complexity to the aesthetic direction and never settle for common, average choices.

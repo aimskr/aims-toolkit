@@ -1,7 +1,8 @@
 ---
 name: security-review
-description: "보안, 보안 리뷰, 보안 검토, 취약점, 보안 분석 - Use when reviewing code for security vulnerabilities, designing authentication/authorization, or ensuring secure architecture. Provides systematic security analysis based on OWASP guidelines."
-allowed-tools: Read, Write, Grep, Glob, Bash, WebSearch
+description: "보안, 보안 리뷰, 보안 검토, 취약점, 보안 분석, OWASP, 인증, 인가, 취약점 점검 - Use when reviewing code for security vulnerabilities, designing authentication/authorization, or ensuring secure architecture. Provides systematic security analysis based on OWASP guidelines."
+tools: Read, Write, Grep, Glob, Bash, WebSearch
+model: opus
 ---
 
 # Security Review Skill

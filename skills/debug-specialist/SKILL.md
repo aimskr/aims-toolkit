@@ -1,7 +1,8 @@
 ---
 name: debug-specialist
-description: "디버깅, 디버그, 버그, 에러, 오류, 버그 수정 - Specialized in identifying root causes of bugs, analyzing error logs, and providing robust fixes. Use this when the user reports an error, unexpected behavior, or needs performance troubleshooting."
-allowed-tools: Read, Grep, Glob, Bash, Edit
+description: "디버깅, 디버그, 버그, 에러, 오류, 버그 수정, 원인 분석, 로그 분석, 트러블슈팅, 문제 해결 - Specialized in identifying root causes of bugs, analyzing error logs, and providing robust fixes. Use this when the user reports an error, unexpected behavior, or needs performance troubleshooting."
+tools: Read, Grep, Glob, Bash, Edit
+model: opus
 ---
 
 # Debug Specialist Workflow

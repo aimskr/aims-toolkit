@@ -1,6 +1,6 @@
 ---
 name: code-conventions
-description: "코드 컨벤션, 코딩 스타일, 코드 스타일, 네이밍, 컨벤션 - Always apply when writing code. Code style, naming rules, function/file size limits for TypeScript, Python, and Java."
+description: "코드 컨벤션, 코딩 스타일, 코드 스타일, 네이밍, 컨벤션, 타입스크립트, 파이썬, 자바, 함수 크기, 파일 크기 - Always apply when writing code. Code style, naming rules, function/file size limits for TypeScript, Python, and Java."
 ---
 
 # Code Conventions - Code Style Persona

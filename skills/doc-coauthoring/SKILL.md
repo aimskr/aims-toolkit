@@ -1,6 +1,6 @@
 ---
 name: doc-coauthoring
-description: "문서 작성, 문서화, 문서, 스펙 작성, 기술 문서, 제안서 - Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content."
+description: "문서 작성, 문서화, 문서, 스펙 작성, 기술 문서, 제안서, RFC, 설계 문서, 의사결정 문서 - Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content."
 allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 

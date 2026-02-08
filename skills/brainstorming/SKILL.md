@@ -1,6 +1,6 @@
 ---
 name: brainstorming
-description: "브레인스토밍, 아이디어, 기획, 구상, 아이디어회의 - You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
+description: "브레인스토밍, 아이디어, 기획, 구상, 아이디어회의, 설계, 요구사항 분석, 접근법 탐색 - You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
 allowed-tools: Read, Grep, Glob, Bash, Write
 ---
 
@@ -33,17 +33,28 @@ Start by understanding the current project context, then ask questions one at a 
 - Cover: architecture, components, data flow, error handling, testing
 - Be ready to go back and clarify if something doesn't make sense
 
-## After the Design
+## After the Design (MANDATORY)
 
-**Documentation:**
-- Write the validated design to `docs/plans/YYYY-MM-DD-<topic>-design.md`
-- Use elements-of-style:writing-clearly-and-concisely skill if available
-- Commit the design document to git
+**Documentation (MUST DO IMMEDIATELY after user approval):**
+- IMMEDIATELY write the validated design to `docs/plans/YYYY-MM-DD-<topic>-design.md`
+- This is NOT optional - do this BEFORE any implementation
+- Include in the document:
+  - Overview and goals
+  - Key requirements summary
+  - File structure (new/modified files list)
+  - Detailed design (with code examples)
+  - Implementation order (separable into TODO items)
+  - Verification methods
+
+**TODO Generation (MUST DO after documentation):**
+- Create implementation tasks from the design
+- Each TODO should be ONE independent work unit
+- TODO order must match implementation order
 
 **Implementation (if continuing):**
 - Ask: "Ready to set up for implementation?"
-- Use superpowers:using-git-worktrees to create isolated workspace
-- Use superpowers:writing-plans to create detailed implementation plan
+- Create isolated workspace if applicable
+- Create detailed implementation plan
 
 ## Key Principles
 

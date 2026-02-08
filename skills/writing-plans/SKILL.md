@@ -1,6 +1,6 @@
 ---
 name: writing-plans
-description: "계획, 구현 계획, 플랜 작성, 작업 계획, 구현 플랜 - Use when you have a spec or requirements for a multi-step task, before touching code"
+description: "계획, 구현 계획, 플랜 작성, 작업 계획, 구현 플랜, 플랜 저장, TODO 저장, 계획 캡처, plan 저장, 플랜 캡처 - Use when you have a spec or requirements for a multi-step task, before touching code. Also captures Plan mode output to structured markdown files."
 allowed-tools: Read, Write, Grep, Glob
 ---
 
@@ -94,6 +94,155 @@ git commit -m "feat: add specific feature"
 - Exact commands with expected output
 - Reference relevant skills with @ syntax
 - DRY, YAGNI, TDD, frequent commits
+
+---
+
+## Plan Mode Output Capture
+
+Capture TODO lists generated from Plan mode and save them as structured markdown files.
+
+**Triggers:** "플랜 저장해줘", "TODO 저장", "계획 캡처", "save plan", "capture plan"
+
+**Announce at start:** "I'm capturing the Plan mode output to save as structured markdown."
+
+### Storage Mode Selection
+
+Ask user first:
+
+**"How would you like to save the Plan output?**
+
+1. **Task-based** - Each TODO as separate file (enables parallel work)
+2. **Step-based** - Single file with sequential checklist (single workflow)
+
+**Please choose."**
+
+### Task-based Storage
+
+Save each TODO as separate file:
+
+**Location:** `docs/plans/<feature>/`
+
+```
+docs/plans/<feature>/
+├── _index.md           # Overview + task links
+├── task-01-<n>.md
+├── task-02-<n>.md
+└── task-03-<n>.md
+```
+
+**_index.md format:**
+
+```markdown
+# [Feature Name] Implementation Plan
+
+**Created:** YYYY-MM-DD HH:mm
+**Status:** In Progress
+
+## Overview
+[Context analyzed from Plan mode]
+
+## Task List
+
+| # | Task | Status | File |
+|---|------|--------|------|
+| 1 | [Task name] | ⬜ | [task-01-name.md](./task-01-name.md) |
+| 2 | [Task name] | ⬜ | [task-02-name.md](./task-02-name.md) |
+
+## Dependencies
+[Task dependency description]
+```
+
+**Individual task file format:**
+
+```markdown
+# Task 1: [Task Name]
+
+**Status:** ⬜ Pending | 🔄 In Progress | ✅ Complete
+**Estimated time:** N min
+**Dependencies:** None | After Task N
+
+## Goal
+[What this task achieves]
+
+## Work Items
+
+### Step 1: [Step name]
+- [ ] Detail 1
+- [ ] Detail 2
+
+### Step 2: [Step name]
+- [ ] Detail
+
+## Related Files
+- `path/to/file.py`
+
+## Completion Criteria
+- [ ] Tests pass
+- [ ] Code review complete
+```
+
+### Step-based Storage
+
+Single file with sequential checklist:
+
+**Location:** `docs/plans/YYYY-MM-DD-HHmm-<feature>.md`
+
+```markdown
+# [Feature Name] Implementation Plan
+
+**Created:** YYYY-MM-DD HH:mm
+**Status:** In Progress
+
+## Overview
+[Context analyzed from Plan mode]
+
+---
+
+## Checklist
+
+### Phase 1: [Phase name]
+- [ ] Step 1: [Description]
+- [ ] Step 2: [Description]
+- [ ] Step 3: [Description]
+
+### Phase 2: [Phase name]
+- [ ] Step 4: [Description]
+- [ ] Step 5: [Description]
+
+---
+
+## Progress Log
+
+| Time | Completed Item | Notes |
+|------|----------------|-------|
+| | | |
+```
+
+### Required Information to Capture
+
+Always extract from Plan mode output:
+
+1. **Context** - Why this work is being done
+2. **TODO list** - All work items
+3. **Dependencies** - Items with ordering constraints
+4. **Related files** - Files to modify/create
+5. **Decisions** - Technical decisions made during planning
+
+### Post-save Message
+
+```
+✅ Plan saved!
+
+📁 Location: docs/plans/<path>
+📋 Tasks: N items
+
+Next steps:
+1. Review saved files
+2. Modify if needed
+3. To start execution, say "execute plan" or "플랜 실행해줘"
+```
+
+---
 
 ## Execution Handoff
 

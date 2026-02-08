@@ -1,6 +1,6 @@
 ---
 name: sequential-thinking
-description: "순차적 사고, 분석, 문제 해결, 복잡한 문제, 단계별 분석 - Use when solving complex problems. Systematic thinking workflow using Sequential Thinking MCP for multi-step analysis, trade-off evaluation, and architectural decisions."
+description: "순차적 사고, 분석, 문제 해결, 복잡한 문제, 단계별 분석, 의사결정, 트레이드오프, 가설 검증 - Use when solving complex problems. Systematic thinking workflow using Sequential Thinking MCP for multi-step analysis, trade-off evaluation, and architectural decisions."
 ---
 
 # Sequential Thinking Workflow

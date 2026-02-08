@@ -1,6 +1,8 @@
 ---
 name: testing-strategy
-description: "테스트, 테스팅, QA, 테스트 전략, 품질 보증 - Use when designing test strategies, writing test plans, or ensuring quality assurance. Guides systematic testing approach from unit to E2E with proper coverage and scenario design."
+description: "테스트, 테스팅, QA, 테스트 전략, 품질 보증, 유닛 테스트, 통합 테스트, E2E, 테스트 커버리지 - Use when designing test strategies, writing test plans, or ensuring quality assurance. Guides systematic testing approach from unit to E2E with proper coverage and scenario design."
+tools: Read, Write, Bash, Grep, Glob
+model: opus
 ---
 
 # Testing Strategy Skill
